@@ -195,20 +195,5 @@ def progress_bar():
         time.sleep(0.01)
         my_bar.progress(percent_complete + 1)
 
-def request_call():
-
-    requestURL = f'https://XUSRPGATQR-dsn.algolia.net/1/indexes/test_Authnetikz?query=test&queryType=prefixNone'
-
-    headers = {
-    "X-Algolia-API-Key": ALGOLIA_API_KEY,
-    "X-Algolia-Application-Id": ALGOLIA_APP_ID
-    }
-
-    response = requests.get(requestURL, headers=headers)
-
-    responsjson = response.json()
-
-    print(responsjson)
-
 if __name__ == "__main__":
     main()
