@@ -84,7 +84,7 @@ def main():
         #Page Title
         st.title("Upload Inventory")
         st.markdown("**Status:**API Live ✔️")
-        st.markdown("**Sharing:** Off - Don't share the tool with anyone until further notice")
+        st.markdown("**Sharing:** On")
         #st.write("Use the file picker below to select a CSV of serial numbers. You will be asked to confirm before the information is fully uploaded.")
         #File picker for the user to upload CSV, store the CSV as a dataframe 
         csv_file = st.file_uploader("Upload a CSV file",  type='.csv') #Type must be CSV
