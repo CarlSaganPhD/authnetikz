@@ -52,7 +52,7 @@ def main():
 
     #Initialzie Algolia Python client
     #todo: Don't store plaintext app ID and API Key. How do we safely deploy these things to Heroku? Maybe dotenv? Not sure
-    client = SearchClient.create(st.secrets["APP_ID"], st.secrets["API_KEY"])
+    client = SearchClient.create(os.environ["APP_ID"], os.environ["API_KEY"])
     index = client.init_index('test_Authnetikz')
 
     database = client.list_indices()
